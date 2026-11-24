@@ -1,0 +1,3 @@
+valor = input('Digite algum para saber se é símbolo ou não: ').lower()
+yes = not (valor in 'abcdefghijklmnopqrstuvwxyz' or valor in ('0', '1', '2', '3', '4','5', '6', '7', '8', '9'))
+print(bool(yes))
