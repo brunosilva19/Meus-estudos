@@ -1,7 +1,0 @@
-nome = str(input('Digite seu nome completo: ')).strip()
-nome_separado = nome.split()
-print('Analisando seu nome...')
-print(f'Seu nome em maiúsculo é: {nome.upper()}.')
-print(f'Seu nome em minúsculo é: {nome.lower()}.')
-print(f'Seu nome ao todo tem {len("".join(nome_separado))} letras.')
-print(f'Seu primeiro nome é {nome_separado[0]} e ele tem {len(nome_separado[0])} letras.')

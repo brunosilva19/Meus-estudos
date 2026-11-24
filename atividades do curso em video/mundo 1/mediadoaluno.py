@@ -1,8 +1,0 @@
-print('====================MÉDIA DO ALUNO====================')
-
-n1 = float(input('Primeira nota do aluno: '))
-n2 = float(input('Segunda nota do aluno: '))
-
-media = (n1 + n2) / 2
-
-print(f'A média do entre {n1:.1f} e {n2:.1f} é {media:.1f}')
