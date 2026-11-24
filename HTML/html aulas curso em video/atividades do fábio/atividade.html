@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-4 card shadow-sm border-secondary">
+        <h2 class="text-center mt-4 mb-4">
+            <span class="badge rounded-pill text-bg-success">ATIVIDADE DE HTML USANDO BOOTSTRAP</span>
+        </h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm bg-dark text-white border-secondary">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h5 mb-0">Lista Ordenada</h2>
+                    </div>
+                    <ol>
+                        <div>
+                            <li>Inscrição</li>
+                            <li>Seleção</li>
+                            <li>Matrícula</li>
+                            <li>Inicio das aulas</li>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm bg-dark text-white border-secondary">
+                    <div class="card-header titulo-neon" style="background-color: #17dda5; color: #0a2216;">
+                        <h2 class="h5 mb-0">Lista Não Ordenada</h2>
+                    </div>
+                    <ul>
+                        <div>
+                            <li>Documentos Obrigatorios</li>
+                            <li>Comprovante de residência</li>
+                            <li>RG e CPF</li>
+                            <li>Histórico escolar</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h4 fw-bold text-center mb-0">Tabela de Cursos</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped table-bordered table-hover">
+                            <tr class="table-primary">
+                                <th>Código</th>
+                                <th>Curso</th>
+                                <th>Turmo</th>
+                                <th>Vagas</th>
+                            </tr>
+                            <tr>
+                                <td>ADS01</td>
+                                <td>Análise e Desenvolvimento de Sistemas</td>
+                                <td class="text-center">
+                                    <span class="badge rounded-pill text-bg-info">Noturno</span>
+                                </td>
+                                <td class="text-center">40</td>
+                            </tr>
+                            <tr>
+                                <td>NUT02</td>
+                                <td>Nutrição</td>
+                                <td class="text-center">
+                                    <span class="badge rounded-pill text-bg-success">Matutino</span>
+                                </td>
+                                <td class="text-center">30</td>
+                            </tr>
+                            <tr>
+                                <td>HIS03</td>
+                                <td>História</td>
+                                <td class="text-center">
+                                    <span class="badge rounded-pill text-bg-warning">Vespertino</span>
+                                </td>
+                                <td class="text-center">35</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h5 mb-0">
+                            Formulário de cadastro
+                        </h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label">
+                                            Nome completo
+                                        </label>
+                                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                                    </div>
+                                    <div>
+                                        <label for="curso" class="form-label">
+                                            Curso
+                                        </label>
+                                        <select id="curso" name="curso" class="form-select">
+                                            <option value="">Selecione um curso</option>
+                                            <option value="ads">ADS</option>
+                                            <option value="nutricao">Nutrição</option>
+                                            <option value="historia">História</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">
+                                            E-mail
+                                        </label>
+                                        <input type="email" class="form-control" id="email" placeholder="exemplo@email.com">
+                                    </div>
+                                    <div>
+                                        <label class="form-babel d-block">
+                                            Turno
+                                        </label>
+                                        <div class="d-flex gap-3" >
+                                            <div class="form-check">
+                                                <input class="form-check-imput" type="radio" nome="turno" id="maturino">
+                                                <label class="form-check-label">Maturino</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-imput" type="radio" nome="turno" id="maturino">
+                                                <label class="form-check-label">Maturino</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-imput" type="radio" nome="turno" id="maturino">
+                                                <label class="form-check-label">Maturino</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <input type="submit" class="btn btn-primary" value="cadastrar">
+                                    <input type="reset" class="btn btn-outline-secondary" value="limpar">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

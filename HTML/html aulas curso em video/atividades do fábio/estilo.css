@@ -1,0 +1,15 @@
+h2.texto{
+    font-family: Arial;
+    color: brown;
+}
+p.texto{
+    font-family: Arial;
+    color: brown;
+    font-size: 12px;
+}
+#centro{
+    text-align: center;
+}
+#terceiro{
+    text-align: right;
+}
