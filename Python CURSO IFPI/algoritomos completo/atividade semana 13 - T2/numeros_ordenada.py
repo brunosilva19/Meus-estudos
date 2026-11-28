@@ -1,7 +1,6 @@
 def criar_lista_ordenada():
     return [], []
 
-
 def colocar_na_lista(lista):
     for _ in range(100):
         valor = int(input('Digite um valor: '))
